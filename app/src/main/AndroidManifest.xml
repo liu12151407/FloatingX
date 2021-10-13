@@ -27,6 +27,7 @@
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".ImmersedActivity" />
         <activity android:name=".ScopeActivity" />
+        <activity android:name=".ScopeFragmentActivity" />
     </application>
 
 </manifest>

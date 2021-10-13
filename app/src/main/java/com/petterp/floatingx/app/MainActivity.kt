@@ -70,6 +70,9 @@ class MainActivity : AppCompatActivity() {
                 addItemView("跳转到局部悬浮窗页面-(测试api功能)") {
                     ScopeActivity::class.java.start()
                 }
+                addItemView("跳转到局部悬浮窗页面-Fragment)") {
+                    ScopeFragmentActivity::class.java.start()
+                }
             }
         )
     }
