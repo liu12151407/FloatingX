@@ -42,7 +42,7 @@ class ScopeActivity : AppCompatActivity() {
                 addScopeViewGroup()
                 addView(
                     TextView(context).apply {
-                        text = "api列表可拖动"
+                        text = "api列表可滑动"
                         gravity = Gravity.CENTER
                         setPadding(0, 0, 0, 20)
                         textSize = 19f

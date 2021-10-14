@@ -12,6 +12,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.petterp.floatingx.FloatingX
+import com.petterp.floatingx.app.issues.Issues28Activity
 import com.petterp.floatingx.app.simple.FxAnimationImpl
 import com.petterp.floatingx.util.activityToFx
 import com.petterp.floatingx.util.createFx
@@ -70,8 +71,8 @@ class MainActivity : AppCompatActivity() {
                 addItemView("跳转到局部悬浮窗页面-(测试api功能)") {
                     ScopeActivity::class.java.start()
                 }
-                addItemView("跳转到局部悬浮窗页面-Fragment)") {
-                    ScopeFragmentActivity::class.java.start()
+                addItemView("issues-28") {
+                    Issues28Activity::class.java.start()
                 }
             }
         )
