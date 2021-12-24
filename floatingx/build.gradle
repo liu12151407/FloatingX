@@ -26,14 +26,7 @@ android {
         targetSdk targetsdk_version
         versionCode versionCode
         versionName version_name
-        consumerProguardFiles "consumer-rules.pro"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-floatingx.pro'
-        }
+        consumerProguardFiles 'proguard-floatingx.pro'
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
