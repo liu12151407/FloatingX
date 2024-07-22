@@ -10,41 +10,35 @@ import com.petterp.floatingx.assist.FxAnimation
  * Fx的动画示例
  * */
 class FxAnimationImpl(private val defaultTime: Long = 1000L) : FxAnimation() {
+    private val values = floatArrayOf(
+        0f,
+        0.95f,
+        0.95f,
+        0.85f,
+        0.85f,
+        0.95f,
+        0.95f,
+        0.9f,
+        0.9f,
+        1f,
+    )
 
     override fun fromAnimator(view: FrameLayout?): Animator {
         val scaleX = ObjectAnimator.ofFloat(
             view,
             "scaleX",
-            0f,
-            0.95f,
-            0.95f,
-            0.85f,
-            0.85f,
-            0.95f,
-            0.95f,
-            0.9f,
-            0.9f,
-            1f
+            *values,
         )
         val scaleY = ObjectAnimator.ofFloat(
             view,
             "scaleY",
-            0f,
-            0.95f,
-            0.95f,
-            0.85f,
-            0.85f,
-            0.95f,
-            0.95f,
-            0.9f,
-            0.9f,
-            1f
+            *values,
         )
         val alpha = ObjectAnimator.ofFloat(
             view,
             "alpha",
             0f,
-            1f
+            1f,
         )
         return AnimatorSet().apply {
             duration = defaultTime
@@ -59,7 +53,7 @@ class FxAnimationImpl(private val defaultTime: Long = 1000L) : FxAnimation() {
             view,
             "alpha",
             1f,
-            0f
+            0f,
         )
         return AnimatorSet().apply {
             duration = defaultTime

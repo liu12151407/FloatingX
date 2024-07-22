@@ -2,17 +2,21 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="50dp"
-    android:layout_height="50dp"
     android:id="@+id/cardItemFx"
-    app:cardBackgroundColor="@android:color/darker_gray"
-    app:cardCornerRadius="25dp"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    app:cardBackgroundColor="@android:color/holo_red_dark"
+    app:cardCornerRadius="50dp"
     app:cardElevation="0dp">
 
     <TextView
         android:id="@+id/tvItemFx"
-        android:layout_width="match_parent"
-        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="top|end"
+        android:padding="7dp"
+        android:text="浮窗1"
         android:textColor="@color/white"
-        android:layout_height="match_parent" />
+        android:textSize="14sp" />
 </androidx.cardview.widget.CardView>

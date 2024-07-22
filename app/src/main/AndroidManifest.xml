@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.petterp.floatingx.app">
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
     <application
         android:name=".kotlin.CustomKtApplication"
         android:icon="@mipmap/ic_launcher"
@@ -13,8 +16,8 @@
         <activity
             android:name="com.petterp.floatingx.app.MainActivity"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout|locale|navigation|fontScale|mcc|mnc|uiMode"
-            android:windowSoftInputMode="adjustPan"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,11 +25,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ImmersedActivity"
+            android:name=".test.ImmersedActivity"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout|locale|navigation|fontScale|mcc|mnc|uiMode" />
         <activity
-            android:name=".ScopeActivity"
+            android:name=".test.ScopeActivity"
             android:configChanges="keyboard|orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout|locale|navigation|fontScale|mcc|mnc|uiMode" />
+        <activity android:name=".test.BlackActivity" />
+        <activity android:name=".test.MultipleFxActivity" />
+
+        <activity android:name=".TestActivity" />
+        <activity
+            android:name=".test.SystemActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".test.SimpleRvActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout|locale|navigation|fontScale|mcc|mnc|uiMode"
+            android:exported="true" >
+
+        </activity>
     </application>
 
 </manifest>
